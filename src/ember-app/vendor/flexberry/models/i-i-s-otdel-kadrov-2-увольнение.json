@@ -1,0 +1,190 @@
+﻿{
+  "name": "IISOtdel_kadrov_2Увольнение",
+  "modelName": "i-i-s-otdel-kadrov-2-увольнение",
+  "className": "Увольнение",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаДк",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаУвольнения",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "основание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ответственный",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отделКадров",
+      "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-otdel-kadrov-2-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УвольнениеE",
+      "modelName": "i-i-s-otdel-kadrov-2-увольнение",
+      "attrs": [
+        {
+          "name": "датаУвольнения",
+          "caption": "Дата увольнения",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "основание",
+          "caption": "Основание",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "ответственный",
+          "caption": "Ответственный",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-otdel-kadrov-2-сотрудники",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтделКадров",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 6,
+          "type": "standard",
+          "caption": "Отдел кадров",
+          "name": "отделКадров",
+          "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "УвольнениеL",
+      "modelName": "i-i-s-otdel-kadrov-2-увольнение",
+      "attrs": [
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаУвольнения",
+          "caption": "Дата увольнения",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "основание",
+          "caption": "Основание",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "ответственный",
+          "caption": "Ответственный",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-otdel-kadrov-2-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

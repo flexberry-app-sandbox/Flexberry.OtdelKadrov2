@@ -1,0 +1,306 @@
+﻿{
+  "name": "IISOtdel_kadrov_2ТаблЧастьТУ",
+  "modelName": "i-i-s-otdel-kadrov-2-табл-часть-т-у",
+  "className": "ТаблЧастьТУ",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаДк",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дниЧасы",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "изНихПоПричинам",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодВидаОплаты",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колВыхПразд",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колНеявок",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колЯвокМес",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колЯвокПМес",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "корресСчет",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "часыЗаМесяц",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "часыЗаПМес",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "явкаНеявка",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТаблЧастьТУE",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-т-у",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "явкаНеявка",
+          "caption": "Явка неявка",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "колЯвокПМес",
+          "caption": "Кол явок п мес",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "колЯвокМес",
+          "caption": "Кол явок мес",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "часыЗаПМес",
+          "caption": "Часы за п мес",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "часыЗаМесяц",
+          "caption": "Часы за месяц",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "кодВидаОплаты",
+          "caption": "Код вида оплаты",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "корресСчет",
+          "caption": "Коррес счет",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "дниЧасы",
+          "caption": "Дни часы",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "колНеявок",
+          "caption": "Кол неявок",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "изНихПоПричинам",
+          "caption": "Из них по причинам",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "колВыхПразд",
+          "caption": "Кол вых празд",
+          "hidden": false,
+          "index": 12
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТаблЧастьТУL",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-т-у",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "явкаНеявка",
+          "caption": "Явка неявка",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "колЯвокПМес",
+          "caption": "Кол явок п мес",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "колЯвокМес",
+          "caption": "Кол явок мес",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "часыЗаПМес",
+          "caption": "Часы за п мес",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "часыЗаМесяц",
+          "caption": "Часы за месяц",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "кодВидаОплаты",
+          "caption": "Код вида оплаты",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "корресСчет",
+          "caption": "Коррес счет",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "дниЧасы",
+          "caption": "Дни часы",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "колНеявок",
+          "caption": "Кол неявок",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "изНихПоПричинам",
+          "caption": "Из них по причинам",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "колВыхПразд",
+          "caption": "Кол вых празд",
+          "hidden": false,
+          "index": 12
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

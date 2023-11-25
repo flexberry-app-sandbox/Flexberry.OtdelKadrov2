@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ОтделКадров",
+      "projection": "ОтделКадровL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Таб уч РВ",
+  "name": "IISOtdel_kadrov_2ТабУчРВE",
+  "className": "ТабУчРВE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-таб-уч-р-в",
+      "modelProjection": "ТабУчРВE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р-e",
+  "editForm": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р-e",
+  "external": false,
+  "caption": "Табл часть СШР",
+  "name": "IISOtdel_kadrov_2ТаблЧастьСШРL",
+  "className": "ТаблЧастьСШРL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р",
+      "modelProjection": "ТаблЧастьСШРL"
+    }
+  ]
+}

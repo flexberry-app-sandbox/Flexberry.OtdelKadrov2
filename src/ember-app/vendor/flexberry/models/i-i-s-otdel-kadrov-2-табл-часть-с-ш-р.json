@@ -1,0 +1,316 @@
+﻿{
+  "name": "IISOtdel_kadrov_2ТаблЧастьСШР",
+  "modelName": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р",
+  "className": "ТаблЧастьСШР",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "всего",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "всегоКолШЕ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "всегоНадбавки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "всегоТС",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "итогоВсего",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "количествоШЕ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "надбавки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "i-i-s-otdel-kadrov-2-подразделение",
+      "flexberryType": "Подразделение",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "примечание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тарифнаяСтавка",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТаблЧастьСШРE",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "количествоШЕ",
+          "caption": "Количество ШЕ",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тарифнаяСтавка",
+          "caption": "Тарифная ставка",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "надбавки",
+          "caption": "Надбавки",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "всего",
+          "caption": "Всего",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "примечание",
+          "caption": "Примечание",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "всегоКолШЕ",
+          "caption": "Всего кол ШЕ",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "всегоТС",
+          "caption": "Всего ТС",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "всегоНадбавки",
+          "caption": "Всего надбавки",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "итогоВсего",
+          "caption": "Итого всего",
+          "hidden": false,
+          "index": 10
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 12
+            }
+          ],
+          "index": 11,
+          "type": "standard",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТаблЧастьСШРL",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "количествоШЕ",
+          "caption": "Количество ШЕ",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тарифнаяСтавка",
+          "caption": "Тарифная ставка",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "надбавки",
+          "caption": "Надбавки",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "всего",
+          "caption": "Всего",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "примечание",
+          "caption": "Примечание",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "всегоКолШЕ",
+          "caption": "Всего кол ШЕ",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "всегоТС",
+          "caption": "Всего ТС",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "всегоНадбавки",
+          "caption": "Всего надбавки",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "итогоВсего",
+          "caption": "Итого всего",
+          "hidden": false,
+          "index": 10
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 11
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "должность",
+          "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

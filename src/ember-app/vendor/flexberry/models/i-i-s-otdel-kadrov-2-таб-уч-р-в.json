@@ -1,0 +1,140 @@
+﻿{
+  "name": "IISOtdel_kadrov_2ТабУчРВ",
+  "modelName": "i-i-s-otdel-kadrov-2-таб-уч-р-в",
+  "className": "ТабУчРВ",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаДк",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "исполнитель",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "период",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "руководитель",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отделКадров",
+      "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТабУчРВE",
+      "modelName": "i-i-s-otdel-kadrov-2-таб-уч-р-в",
+      "attrs": [
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "руководитель",
+          "caption": "Руководитель",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "период",
+          "caption": "Период",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "исполнитель",
+          "caption": "Исполнитель",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтделКадров",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "standard",
+          "caption": "Отдел кадров",
+          "name": "отделКадров",
+          "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТабУчРВL",
+      "modelName": "i-i-s-otdel-kadrov-2-таб-уч-р-в",
+      "attrs": [
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "руководитель",
+          "caption": "Руководитель",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "период",
+          "caption": "Период",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "исполнитель",
+          "caption": "Исполнитель",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

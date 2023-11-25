@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Otdel_kadrov_2.model.TablCHastSSHR</class>
+        <class>Otdel_kadrov_2.model.Sotrudniki</class>
+        <class>Otdel_kadrov_2.model.TablCHastTU</class>
+        <class>Otdel_kadrov_2.model.TabUchRV</class>
+        <class>Otdel_kadrov_2.model.Dolzhnost</class>
+        <class>Otdel_kadrov_2.model.TablCHastGO</class>
+        <class>Otdel_kadrov_2.model.Uvolnenie</class>
+        <class>Otdel_kadrov_2.model.GrafikOtpusk</class>
+        <class>Otdel_kadrov_2.model.TablCHastSotrud</class>
+        <class>Otdel_kadrov_2.model.OtdelKadrov</class>
+        <class>Otdel_kadrov_2.model.SostSHtatRas</class>
+        <class>Otdel_kadrov_2.model.PrikazOPrieme</class>
+        <class>Otdel_kadrov_2.model.FlexberryAdvLimit</class>
+        <class>Otdel_kadrov_2.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Otdel_kadrov_2.model.NewPlatformFlexberryServicesLock</class>
+        <class>Otdel_kadrov_2.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

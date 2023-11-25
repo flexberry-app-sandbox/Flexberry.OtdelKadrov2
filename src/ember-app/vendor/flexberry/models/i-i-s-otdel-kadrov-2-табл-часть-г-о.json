@@ -1,0 +1,232 @@
+﻿{
+  "name": "IISOtdel_kadrov_2ТаблЧастьГО",
+  "modelName": "i-i-s-otdel-kadrov-2-табл-часть-г-о",
+  "className": "ТаблЧастьГО",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаЗап",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаФакт",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колКалДней",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "основание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "перенос",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "примечание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-otdel-kadrov-2-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТаблЧастьГОE",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-г-о",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колКалДней",
+          "caption": "Кол кал дней",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаЗап",
+          "caption": "Дата зап",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаФакт",
+          "caption": "Дата факт",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "основание",
+          "caption": "Основание",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "перенос",
+          "caption": "Перенос",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "примечание",
+          "caption": "Примечание",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-otdel-kadrov-2-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТаблЧастьГОL",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-г-о",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колКалДней",
+          "caption": "Кол кал дней",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаЗап",
+          "caption": "Дата зап",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "датаФакт",
+          "caption": "Дата факт",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "основание",
+          "caption": "Основание",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "перенос",
+          "caption": "Перенос",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "примечание",
+          "caption": "Примечание",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-otdel-kadrov-2-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

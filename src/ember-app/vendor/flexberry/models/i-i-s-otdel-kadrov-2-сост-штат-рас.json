@@ -1,0 +1,140 @@
+﻿{
+  "name": "IISOtdel_kadrov_2СостШтатРас",
+  "modelName": "i-i-s-otdel-kadrov-2-сост-штат-рас",
+  "className": "СостШтатРас",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "главБух",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаДк",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "период",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "руководительКО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отделКадров",
+      "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СостШтатРасE",
+      "modelName": "i-i-s-otdel-kadrov-2-сост-штат-рас",
+      "attrs": [
+        {
+          "name": "период",
+          "caption": "Период",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "руководительКО",
+          "caption": "Руководитель КО",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "главБух",
+          "caption": "Глав бух",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтделКадров",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "standard",
+          "caption": "Отдел кадров",
+          "name": "отделКадров",
+          "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СостШтатРасL",
+      "modelName": "i-i-s-otdel-kadrov-2-сост-штат-рас",
+      "attrs": [
+        {
+          "name": "период",
+          "caption": "Период",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "руководительКО",
+          "caption": "Руководитель КО",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "главБух",
+          "caption": "Глав бух",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

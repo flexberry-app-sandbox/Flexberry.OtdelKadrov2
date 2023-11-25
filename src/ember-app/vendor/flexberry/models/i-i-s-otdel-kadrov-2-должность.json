@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISOtdel_kadrov_2Должность",
+  "modelName": "i-i-s-otdel-kadrov-2-должность",
+  "className": "Должность",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDДолжности",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДолжностьE",
+      "modelName": "i-i-s-otdel-kadrov-2-должность",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDДолжности",
+          "caption": "I d должности",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДолжностьL",
+      "modelName": "i-i-s-otdel-kadrov-2-должность",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDДолжности",
+          "caption": "I d должности",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

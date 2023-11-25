@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-таб-уч-р-в-e",
+  "editForm": "i-i-s-otdel-kadrov-2-таб-уч-р-в-e",
+  "external": false,
+  "caption": "Таб уч РВ",
+  "name": "IISOtdel_kadrov_2ТабУчРВL",
+  "className": "ТабУчРВL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-таб-уч-р-в",
+      "modelProjection": "ТабУчРВL"
+    }
+  ]
+}

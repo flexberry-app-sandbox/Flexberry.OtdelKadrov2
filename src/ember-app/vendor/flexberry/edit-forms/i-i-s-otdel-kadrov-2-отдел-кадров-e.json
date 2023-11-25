@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Отдел кадров",
+  "name": "IISOtdel_kadrov_2ОтделКадровE",
+  "className": "ОтделКадровE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-отдел-кадров",
+      "modelProjection": "ОтделКадровE"
+    }
+  ]
+}

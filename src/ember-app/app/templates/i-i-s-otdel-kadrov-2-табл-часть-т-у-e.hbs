@@ -1,0 +1,158 @@
+<h3 class="ui header">{{t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.код
+      class=(if (v-get validationModel "код" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.код-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-код=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "код" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.датаДк-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаДк
+      class=(if (v-get validationModel "датаДк" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-датаДк=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаДк" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.явкаНеявка-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.явкаНеявка
+      class=(if (v-get validationModel "явкаНеявка" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-явкаНеявка=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "явкаНеявка" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колЯвокПМес
+      class=(if (v-get validationModel "колЯвокПМес" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.колЯвокПМес-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-колЯвокПМес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колЯвокПМес" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колЯвокМес
+      class=(if (v-get validationModel "колЯвокМес" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.колЯвокМес-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-колЯвокМес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колЯвокМес" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.часыЗаПМес
+      class=(if (v-get validationModel "часыЗаПМес" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.часыЗаПМес-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-часыЗаПМес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "часыЗаПМес" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.часыЗаМесяц
+      class=(if (v-get validationModel "часыЗаМесяц" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.часыЗаМесяц-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-часыЗаМесяц=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "часыЗаМесяц" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодВидаОплаты
+      class=(if (v-get validationModel "кодВидаОплаты" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.кодВидаОплаты-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-кодВидаОплаты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодВидаОплаты" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.корресСчет
+      class=(if (v-get validationModel "корресСчет" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.корресСчет-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-корресСчет=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "корресСчет" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.дниЧасы
+      class=(if (v-get validationModel "дниЧасы" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.дниЧасы-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-дниЧасы=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дниЧасы" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колНеявок
+      class=(if (v-get validationModel "колНеявок" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.колНеявок-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-колНеявок=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колНеявок" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.изНихПоПричинам
+      class=(if (v-get validationModel "изНихПоПричинам" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.изНихПоПричинам-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-изНихПоПричинам=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "изНихПоПричинам" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колВыхПразд
+      class=(if (v-get validationModel "колВыхПразд" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-табл-часть-т-у-e.колВыхПразд-caption")
+      data-test-i-i-s-otdel-kadrov-2-табл-часть-т-у-e-колВыхПразд=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колВыхПразд" "message")}}
+  </div>
+</form>

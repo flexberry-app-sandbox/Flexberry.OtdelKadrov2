@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-отдел-кадров-e",
+  "editForm": "i-i-s-otdel-kadrov-2-отдел-кадров-e",
+  "external": false,
+  "caption": "Отдел кадров",
+  "name": "IISOtdel_kadrov_2ОтделКадровL",
+  "className": "ОтделКадровL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-отдел-кадров",
+      "modelProjection": "ОтделКадровL"
+    }
+  ]
+}

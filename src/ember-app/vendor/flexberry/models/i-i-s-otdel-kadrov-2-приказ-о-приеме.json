@@ -1,0 +1,295 @@
+﻿{
+  "name": "IISOtdel_kadrov_2ПриказОПриеме",
+  "modelName": "i-i-s-otdel-kadrov-2-приказ-о-приеме",
+  "className": "ПриказОПриеме",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "графикРаботы",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаДк",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаПриема",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "занятость",
+      "type": "i-i-s-otdel-kadrov-2-занятость",
+      "flexberryType": "Занятость",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оклад",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ответсвенный",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "подразделение",
+      "type": "i-i-s-otdel-kadrov-2-подразделение",
+      "flexberryType": "Подразделение",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "срокЗаключения",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отделКадров",
+      "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПриказОПриемеE",
+      "modelName": "i-i-s-otdel-kadrov-2-приказ-о-приеме",
+      "attrs": [
+        {
+          "name": "подразделение",
+          "caption": "Подразделение",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "оклад",
+          "caption": "Оклад",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "графикРаботы",
+          "caption": "График работы",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "ответсвенный",
+          "caption": "Ответсвенный",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "срокЗаключения",
+          "caption": "Срок заключения",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "датаПриема",
+          "caption": "Дата приема",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "занятость",
+          "caption": "Занятость",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "standard",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтделКадров",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 11,
+          "type": "standard",
+          "caption": "Отдел кадров",
+          "name": "отделКадров",
+          "relatedTo": "i-i-s-otdel-kadrov-2-отдел-кадров",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПриказОПриемеL",
+      "modelName": "i-i-s-otdel-kadrov-2-приказ-о-приеме",
+      "attrs": [
+        {
+          "name": "датаДк",
+          "caption": "Дата дк",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "подразделение",
+          "caption": "Подразделение",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "оклад",
+          "caption": "Оклад",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "графикРаботы",
+          "caption": "График работы",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "ответсвенный",
+          "caption": "Ответсвенный",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "срокЗаключения",
+          "caption": "Срок заключения",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "датаПриема",
+          "caption": "Дата приема",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "занятость",
+          "caption": "Занятость",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "должность",
+          "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

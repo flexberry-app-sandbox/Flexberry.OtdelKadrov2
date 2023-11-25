@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-приказ-о-приеме-e",
+  "editForm": "i-i-s-otdel-kadrov-2-приказ-о-приеме-e",
+  "external": false,
+  "caption": "Приказ о приеме",
+  "name": "IISOtdel_kadrov_2ПриказОПриемеL",
+  "className": "ПриказОПриемеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-приказ-о-приеме",
+      "modelProjection": "ПриказОПриемеL"
+    }
+  ]
+}

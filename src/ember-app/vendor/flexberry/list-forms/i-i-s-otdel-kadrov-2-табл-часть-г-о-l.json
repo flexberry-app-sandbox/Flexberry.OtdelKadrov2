@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-табл-часть-г-о-e",
+  "editForm": "i-i-s-otdel-kadrov-2-табл-часть-г-о-e",
+  "external": false,
+  "caption": "Табл часть ГО",
+  "name": "IISOtdel_kadrov_2ТаблЧастьГОL",
+  "className": "ТаблЧастьГОL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-г-о",
+      "modelProjection": "ТаблЧастьГОL"
+    }
+  ]
+}

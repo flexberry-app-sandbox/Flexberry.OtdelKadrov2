@@ -1,0 +1,253 @@
+﻿{
+  "name": "IISOtdel_kadrov_2Сотрудники",
+  "modelName": "i-i-s-otdel-kadrov-2-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDСотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "гражданство",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаРождения",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "знаниеЯзыков",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "образование",
+      "type": "i-i-s-otdel-kadrov-2-образование",
+      "flexberryType": "Образование",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "подразделение",
+      "type": "i-i-s-otdel-kadrov-2-подразделение",
+      "flexberryType": "Подразделение",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пол",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-otdel-kadrov-2-сотрудники",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаРождения",
+          "caption": "Дата рождения",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDСотрудника",
+          "caption": "I d сотрудника",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "пол",
+          "caption": "Пол",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "подразделение",
+          "caption": "Подразделение",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "знаниеЯзыков",
+          "caption": "Знание языков",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "образование",
+          "caption": "Образование",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "гражданство",
+          "caption": "Гражданство",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-otdel-kadrov-2-сотрудники",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаРождения",
+          "caption": "Дата рождения",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDСотрудника",
+          "caption": "I d сотрудника",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "пол",
+          "caption": "Пол",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "подразделение",
+          "caption": "Подразделение",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "знаниеЯзыков",
+          "caption": "Знание языков",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "образование",
+          "caption": "Образование",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "гражданство",
+          "caption": "Гражданство",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "должность",
+          "relatedTo": "i-i-s-otdel-kadrov-2-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

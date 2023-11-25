@@ -1,0 +1,99 @@
+﻿{
+  "applicationCaption": "Otdel_kadrov_2",
+  "applicationTitle": "Otdel_kadrov_2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "otdel-kadrov-2",
+      "caption": "Otdel_kadrov_2",
+      "title": "Otdel_kadrov_2",
+      "children": [
+        {
+          "link": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р-l",
+          "menuName": null,
+          "caption": "Табл часть СШР",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-табл-часть-т-у-l",
+          "menuName": null,
+          "caption": "Табл часть ТУ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-таб-уч-р-в-l",
+          "menuName": null,
+          "caption": "Таб уч РВ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-табл-часть-г-о-l",
+          "menuName": null,
+          "caption": "Табл часть ГО",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-увольнение-l",
+          "menuName": null,
+          "caption": "Увольнение",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-график-отпуск-l",
+          "menuName": null,
+          "caption": "График отпуск",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-табл-часть-сотруд-l",
+          "menuName": null,
+          "caption": "Табл часть сотруд",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-отдел-кадров-l",
+          "menuName": null,
+          "caption": "Отдел кадров",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-сост-штат-рас-l",
+          "menuName": null,
+          "caption": "Сост штат рас",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-2-приказ-о-приеме-l",
+          "menuName": null,
+          "caption": "Приказ о приеме",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

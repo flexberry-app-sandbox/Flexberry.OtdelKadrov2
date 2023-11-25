@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Табл часть сотруд",
+  "name": "IISOtdel_kadrov_2ТаблЧастьСотрудE",
+  "className": "ТаблЧастьСотрудE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-сотруд",
+      "modelProjection": "ТаблЧастьСотрудE"
+    }
+  ]
+}

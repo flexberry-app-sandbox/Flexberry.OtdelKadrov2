@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Должность",
+      "projection": "ДолжностьL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Табл часть СШР",
+  "name": "IISOtdel_kadrov_2ТаблЧастьСШРE",
+  "className": "ТаблЧастьСШРE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-с-ш-р",
+      "modelProjection": "ТаблЧастьСШРE"
+    }
+  ]
+}

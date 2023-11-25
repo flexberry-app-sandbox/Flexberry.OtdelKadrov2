@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-график-отпуск-e",
+  "editForm": "i-i-s-otdel-kadrov-2-график-отпуск-e",
+  "external": false,
+  "caption": "График отпуск",
+  "name": "IISOtdel_kadrov_2ГрафикОтпускL",
+  "className": "ГрафикОтпускL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-график-отпуск",
+      "modelProjection": "ГрафикОтпускL"
+    }
+  ]
+}

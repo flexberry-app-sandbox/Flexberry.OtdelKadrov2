@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-сост-штат-рас-e",
+  "editForm": "i-i-s-otdel-kadrov-2-сост-штат-рас-e",
+  "external": false,
+  "caption": "Сост штат рас",
+  "name": "IISOtdel_kadrov_2СостШтатРасL",
+  "className": "СостШтатРасL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-сост-штат-рас",
+      "modelProjection": "СостШтатРасL"
+    }
+  ]
+}

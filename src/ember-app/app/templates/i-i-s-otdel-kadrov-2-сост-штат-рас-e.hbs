@@ -1,0 +1,85 @@
+<h3 class="ui header">{{t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.период-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.период
+      class=(if (v-get validationModel "период" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-сост-штат-рас-e-период=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "период" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.руководительКО
+      class=(if (v-get validationModel "руководительКО" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.руководительКО-caption")
+      data-test-i-i-s-otdel-kadrov-2-сост-штат-рас-e-руководительКО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "руководительКО" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.датаДк-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаДк
+      class=(if (v-get validationModel "датаДк" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-сост-штат-рас-e-датаДк=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаДк" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.главБух
+      class=(if (v-get validationModel "главБух" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.главБух-caption")
+      data-test-i-i-s-otdel-kadrov-2-сост-штат-рас-e-главБух=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "главБух" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.отделКадров-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.отделКадров
+      relationName="отделКадров"
+      projection="ОтделКадровL"
+      title=(t "forms.i-i-s-otdel-kadrov-2-сост-штат-рас-e.отделКадров-caption")
+      readonly=readonly
+      componentName="отделКадровLookup"
+      class=(if (v-get validationModel "отделКадров" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-сост-штат-рас-e-отделКадров=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "отделКадров" "message")}}
+  </div>
+</form>

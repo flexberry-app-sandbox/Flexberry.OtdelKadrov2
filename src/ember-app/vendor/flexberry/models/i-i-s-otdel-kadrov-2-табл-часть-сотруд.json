@@ -1,0 +1,159 @@
+﻿{
+  "name": "IISOtdel_kadrov_2ТаблЧастьСотруд",
+  "modelName": "i-i-s-otdel-kadrov-2-табл-часть-сотруд",
+  "className": "ТаблЧастьСотруд",
+  "nameSpace": "IIS.Otdel_kadrov_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "cерия",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "годОкончания",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "квалификация",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимДок",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимОбуч",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТаблЧастьСотрудE",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-сотруд",
+      "attrs": [
+        {
+          "name": "наимОбуч",
+          "caption": "Наим обуч",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "квалификация",
+          "caption": "Квалификация",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наимДок",
+          "caption": "Наим док",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "cерия",
+          "caption": "Cерия",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "годОкончания",
+          "caption": "Год окончания",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТаблЧастьСотрудL",
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-сотруд",
+      "attrs": [
+        {
+          "name": "наимОбуч",
+          "caption": "Наим обуч",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "квалификация",
+          "caption": "Квалификация",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наимДок",
+          "caption": "Наим док",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "cерия",
+          "caption": "Cерия",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "годОкончания",
+          "caption": "Год окончания",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-увольнение-e",
+  "editForm": "i-i-s-otdel-kadrov-2-увольнение-e",
+  "external": false,
+  "caption": "Увольнение",
+  "name": "IISOtdel_kadrov_2УвольнениеL",
+  "className": "УвольнениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-увольнение",
+      "modelProjection": "УвольнениеL"
+    }
+  ]
+}

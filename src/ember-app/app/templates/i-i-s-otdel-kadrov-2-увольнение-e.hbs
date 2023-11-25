@@ -1,0 +1,103 @@
+<h3 class="ui header">{{t "forms.i-i-s-otdel-kadrov-2-увольнение-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-увольнение-e.датаУвольнения-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаУвольнения
+      class=(if (v-get validationModel "датаУвольнения" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-увольнение-e-датаУвольнения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаУвольнения" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-увольнение-e.датаДк-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаДк
+      class=(if (v-get validationModel "датаДк" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-увольнение-e-датаДк=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаДк" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.основание
+      class=(if (v-get validationModel "основание" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-увольнение-e.основание-caption")
+      data-test-i-i-s-otdel-kadrov-2-увольнение-e-основание=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "основание" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.ответственный
+      class=(if (v-get validationModel "ответственный" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-2-увольнение-e.ответственный-caption")
+      data-test-i-i-s-otdel-kadrov-2-увольнение-e-ответственный=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "ответственный" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-увольнение-e.сотрудники-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудники
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="сотрудники"
+      projection="СотрудникиL"
+      title=(t "forms.i-i-s-otdel-kadrov-2-увольнение-e.сотрудники-caption")
+      readonly=readonly
+      componentName="сотрудникиLookup"
+      class=(if (v-get validationModel "сотрудники" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-увольнение-e-сотрудники=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудники" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-2-увольнение-e.отделКадров-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.отделКадров
+      relationName="отделКадров"
+      projection="ОтделКадровL"
+      title=(t "forms.i-i-s-otdel-kadrov-2-увольнение-e.отделКадров-caption")
+      readonly=readonly
+      componentName="отделКадровLookup"
+      class=(if (v-get validationModel "отделКадров" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-2-увольнение-e-отделКадров=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "отделКадров" "message")}}
+  </div>
+</form>

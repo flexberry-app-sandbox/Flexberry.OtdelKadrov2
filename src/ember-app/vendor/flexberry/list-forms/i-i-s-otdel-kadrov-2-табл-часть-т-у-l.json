@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-2-табл-часть-т-у-e",
+  "editForm": "i-i-s-otdel-kadrov-2-табл-часть-т-у-e",
+  "external": false,
+  "caption": "Табл часть ТУ",
+  "name": "IISOtdel_kadrov_2ТаблЧастьТУL",
+  "className": "ТаблЧастьТУL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-2-табл-часть-т-у",
+      "modelProjection": "ТаблЧастьТУL"
+    }
+  ]
+}
