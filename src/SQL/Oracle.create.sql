@@ -9,7 +9,7 @@ CREATE TABLE "ТаблЧастьСШР"
 
 	"Код" NUMBER(10) NULL,
 
-	"Наименование" NVARCHAR2(13) NULL,
+	"Наименование" NVARCHAR2(26) NULL,
 
 	"КоличествоШЕ" NUMBER(10) NULL,
 
@@ -48,11 +48,11 @@ CREATE TABLE "Сотрудники"
 
 	"Пол" NVARCHAR2(255) NULL,
 
-	"Подразделение" NVARCHAR2(13) NULL,
+	"Подразделение" NVARCHAR2(26) NULL,
 
 	"ЗнаниеЯзыков" NVARCHAR2(255) NULL,
 
-	"Образование" NVARCHAR2(11) NULL,
+	"Образование" NVARCHAR2(24) NULL,
 
 	"Гражданство" NVARCHAR2(255) NULL,
 
@@ -250,7 +250,7 @@ CREATE TABLE "ПриказОПриеме"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"Подразделение" NVARCHAR2(13) NULL,
+	"Подразделение" NVARCHAR2(26) NULL,
 
 	"Оклад" FLOAT(126) NULL,
 
@@ -266,7 +266,7 @@ CREATE TABLE "ПриказОПриеме"
 
 	"ДатаПриема" DATE NULL,
 
-	"Занятость" NVARCHAR2(15) NULL,
+	"Занятость" NVARCHAR2(28) NULL,
 
 	"Должность" RAW(16) NOT NULL,
 

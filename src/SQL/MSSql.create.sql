@@ -22,7 +22,7 @@ CREATE TABLE [ТаблЧастьСШР] (
 
 	 [Надбавки] INT  NULL,
 
-	 [Наименование] VARCHAR(13)  NULL,
+	 [Наименование] VARCHAR(26)  NULL,
 
 	 [Примечание] VARCHAR(255)  NULL,
 
@@ -45,9 +45,9 @@ CREATE TABLE [Сотрудники] (
 
 	 [ЗнаниеЯзыков] VARCHAR(255)  NULL,
 
-	 [Образование] VARCHAR(11)  NULL,
+	 [Образование] VARCHAR(24)  NULL,
 
-	 [Подразделение] VARCHAR(13)  NULL,
+	 [Подразделение] VARCHAR(26)  NULL,
 
 	 [Пол] VARCHAR(255)  NULL,
 
@@ -233,13 +233,13 @@ CREATE TABLE [ПриказОПриеме] (
 
 	 [ДатаПриема] DATETIME  NULL,
 
-	 [Занятость] VARCHAR(15)  NULL,
+	 [Занятость] VARCHAR(28)  NULL,
 
 	 [Оклад] FLOAT  NULL,
 
 	 [Ответсвенный] VARCHAR(255)  NULL,
 
-	 [Подразделение] VARCHAR(13)  NULL,
+	 [Подразделение] VARCHAR(26)  NULL,
 
 	 [СрокЗаключения] INT  NULL,
 

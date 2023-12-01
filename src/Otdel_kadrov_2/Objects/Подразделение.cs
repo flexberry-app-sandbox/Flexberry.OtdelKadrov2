@@ -12,6 +12,7 @@ namespace IIS.Otdel_kadrov_2
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,56 +32,67 @@ namespace IIS.Otdel_kadrov_2
         // *** Start programmer edit section *** (Подразделение.ВалютныйОтдел CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.ВалютныйОтдел CustomAttributes)
+        [Caption("Валютный отдел")]
         ВалютныйОтдел,
         
         // *** Start programmer edit section *** (Подразделение.ОтделКредит CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.ОтделКредит CustomAttributes)
+        [Caption("Отдел кредитования")]
         ОтделКредит,
-        
-        // *** Start programmer edit section *** (Подразделение.ОтделПлан CustomAttributes)
-
-        // *** End programmer edit section *** (Подразделение.ОтделПлан CustomAttributes)
-        ОтделПлан,
-        
-        // *** Start programmer edit section *** (Подразделение.ПлатежныйОт CustomAttributes)
-
-        // *** End programmer edit section *** (Подразделение.ПлатежныйОт CustomAttributes)
-        ПлатежныйОт,
         
         // *** Start programmer edit section *** (Подразделение.Бухгалтерия CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.Бухгалтерия CustomAttributes)
+        [Caption("Бухгалтерский")]
         Бухгалтерия,
         
         // *** Start programmer edit section *** (Подразделение.ИнвестОт CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.ИнвестОт CustomAttributes)
+        [Caption("Инвестиционный отдел")]
         ИнвестОт,
-        
-        // *** Start programmer edit section *** (Подразделение.ОтДепОпер CustomAttributes)
-
-        // *** End programmer edit section *** (Подразделение.ОтДепОпер CustomAttributes)
-        ОтДепОпер,
         
         // *** Start programmer edit section *** (Подразделение.ЮрОтедл CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.ЮрОтедл CustomAttributes)
+        [Caption("Юридический отдел")]
         ЮрОтедл,
+        
+        // *** Start programmer edit section *** (Подразделение.ОтДепОпер CustomAttributes)
+
+        // *** End programmer edit section *** (Подразделение.ОтДепОпер CustomAttributes)
+        [Caption("Отдел депозитных операций")]
+        ОтДепОпер,
+        
+        // *** Start programmer edit section *** (Подразделение.ОтделПлан CustomAttributes)
+
+        // *** End programmer edit section *** (Подразделение.ОтделПлан CustomAttributes)
+        [Caption("Отдел планирования")]
+        ОтделПлан,
+        
+        // *** Start programmer edit section *** (Подразделение.ПлатежныйОт CustomAttributes)
+
+        // *** End programmer edit section *** (Подразделение.ПлатежныйОт CustomAttributes)
+        [Caption("Платежный отдел")]
+        ПлатежныйОт,
+        
+        // *** Start programmer edit section *** (Подразделение.ОтКадров CustomAttributes)
+
+        // *** End programmer edit section *** (Подразделение.ОтКадров CustomAttributes)
+        [Caption("Отдел кадров")]
+        ОтКадров,
         
         // *** Start programmer edit section *** (Подразделение.ОтПоСтрах CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.ОтПоСтрах CustomAttributes)
+        [Caption("отдел по страхованию")]
         ОтПоСтрах,
         
         // *** Start programmer edit section *** (Подразделение.ОперацПодр CustomAttributes)
 
         // *** End programmer edit section *** (Подразделение.ОперацПодр CustomAttributes)
+        [Caption("Операционное подразделение")]
         ОперацПодр,
-        
-        // *** Start programmer edit section *** (Подразделение.ОтКадров CustomAttributes)
-
-        // *** End programmer edit section *** (Подразделение.ОтКадров CustomAttributes)
-        ОтКадров,
     }
 }

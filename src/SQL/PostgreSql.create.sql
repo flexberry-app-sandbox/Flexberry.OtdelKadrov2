@@ -6,7 +6,7 @@
 CREATE TABLE ТаблЧастьСШР (
  primaryKey UUID NOT NULL,
  Код INT NULL,
- Наименование VARCHAR(13) NULL,
+ Наименование VARCHAR(26) NULL,
  КоличествоШЕ INT NULL,
  ТарифнаяСтавка INT NULL,
  Надбавки INT NULL,
@@ -26,9 +26,9 @@ CREATE TABLE Сотрудники (
  ДатаРождения TIMESTAMP(3) NULL,
  IDСотрудника INT NULL,
  Пол VARCHAR(255) NULL,
- Подразделение VARCHAR(13) NULL,
+ Подразделение VARCHAR(26) NULL,
  ЗнаниеЯзыков VARCHAR(255) NULL,
- Образование VARCHAR(11) NULL,
+ Образование VARCHAR(24) NULL,
  Гражданство VARCHAR(255) NULL,
  Должность UUID NOT NULL,
  PRIMARY KEY (primaryKey));
@@ -132,7 +132,7 @@ CREATE TABLE СостШтатРас (
 
 CREATE TABLE ПриказОПриеме (
  primaryKey UUID NOT NULL,
- Подразделение VARCHAR(13) NULL,
+ Подразделение VARCHAR(26) NULL,
  Оклад DOUBLE PRECISION NULL,
  ФИО VARCHAR(255) NULL,
  ГрафикРаботы VARCHAR(255) NULL,
@@ -140,7 +140,7 @@ CREATE TABLE ПриказОПриеме (
  Ответсвенный VARCHAR(255) NULL,
  СрокЗаключения INT NULL,
  ДатаПриема TIMESTAMP(3) NULL,
- Занятость VARCHAR(15) NULL,
+ Занятость VARCHAR(28) NULL,
  Должность UUID NOT NULL,
  ОтделКадров UUID NOT NULL,
  PRIMARY KEY (primaryKey));
